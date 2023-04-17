@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>AeroK</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header_dox">
+        <h1 class="logo"><a href="#none" aria-label="메인로고"></a></h1>
+        <div class="menu"><a href="#none" class="ico_menu" rolo="button" aria-label="메뉴열기"></a></div>
+      </header>
+      <section>
+        <h2 class="h2_tit" aria-label="새로운 여정의 시작"></h2>
+        <div class="sch_box">
+          <div class="trip_path">
+            <div class="leave">
+              <a href="#none" role="button" aria-label="출발지역">
+                <span class="code">CJJ</span>
+                <span class="city">청주</span>
+                <i class="ico_arr_down"></i>
+              </a>
+            </div>
+            <div class="ico_exchange"><a href="#none" role="button" aria-label="지정지역전환"></a></div>
+            <div class="arrive">
+              <a href="#none" role="button" aria-label="도착지역">
+                <span class="code">CJU</span>
+                <span class="city">제주</span>
+                <i class="ico_arr_down"></i>
+              </a>
+            </div>
+          </div>
+          <div class="date">
+            <div class="leave_date">
+              <i class="ico_cal"></i>
+              <input type="text" title="가는 날 선택" placeholder="가는 날" />
+            </div>
+            <div class="come_date">
+              <i class="ico_cal"></i>
+              <input type="text" title="오는 날 선택" placeholder="오는 날" />
+            </div>
+          </div>
+          <div class="headcount"><i class="ico_human"></i><input type="text" title="인원선택" placeholder="성인 1" /></div>
+          <div class="apply">
+            <div class="check">
+              <input type="checkbox" title="왕복권 선택" id="trip_chk1" name="trip_chk1" value="왕복" />
+              <label for="trip_chk1">왕복</label>
+              <input type="checkbox" title="편도권 선택" id="trip_chk2" name="trip_chk2" value="편도" />
+              <label for="trip_chk2">편도</label>
+            </div>
+            <div class="promo_code">
+              <label for="code_select">프로모션코드 입력</label>
+              <select name="promo_code" title="프로모션선택입력" id="code_select">
+                <option value="">프로모션코드 입력</option>
+                <option value="code1">code1</option>
+                <option value="code2">code2</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn_sch"><a href="#none" role="button" aria-label="항공편조회버튼">항공편 조회</a></div>
+        </div>
+        <div class="df_box">
+          <h4 class="h4_tit">에어로케이의 특별한 소식</h4>
+        </div>
+        <div class="slide_box">
+          <div class="swiper auto_ply_slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href=""><img src="./images/img_banner_hotelscombine.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href=""><img src="./images/img_banner_1.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href=""><img src="./images/img_banner_2.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href=""><img src="./images/img_banner_3.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="swiper-pagination-wrap">
+              <div class="swiper-scrollbar"></div>
+              <div class="swiper-pagination"></div>
+              <button class="swiper-auto-btn">정지</button>
+            </div>
+          </div>
+        </div>
+        <div class="df_box">
+          <h3 class="h3_tit"><span class="fc_sky">더 편안하게</span><br />추천 숙소와 렌트카</h3>
+        </div>
+        <div class="tab_box">
+          <div class="tab_menu_list tab_list_box">
+            <ul>
+              <li class="tab_li"><a href="#tab_box00" role="button" aria-label="숙소">숙소</a></li>
+              <li class="tab_li"><a href="#tab_box01" role="button" aria-label="렌트카">렌트카</a></li>
+            </ul>
+            <div class="underline"></div>
+          </div>
+          <div class="tab_content" id="tab_box00">
+            <div class="row_scroll_box">
+              <div class="swiper">
+                <!-- space-between="20" slides-per-view="auto" pagination="false" -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide scroll_list">
+                    <a href="#none" aria-label="호텔바로보기">
+                      <img src="./images/img_hotel.png" alt="" />
+                      <span class="location">제주시</span>
+                      <span class="place">그라벨호텔</span>
+                      <div class="sale_price"><strong>125,000</strong>원~</div>
+                      <span class="price"><strong>231,000</strong>원</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide scroll_list">
+                    <a href="#none" aria-label="호텔바로보기">
+                      <img src="./images/img_hotel1.png" alt="" />
+                      <span class="location">서귀포시</span>
+                      <span class="place">파르나스 호텔제주</span>
+                      <div class="sale_price"><strong>269,104</strong>원~</div>
+                      <span class="price"><strong>326,700</strong>원</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide scroll_list">
+                    <a href="#none" aria-label="호텔바로보기">
+                      <img src="./images/img_hotel2.png" alt="" />
+                      <span class="location">서귀포시</span>
+                      <span class="place">브라운 스위트 제주</span>
+                      <div class="sale_price"><strong>4,250</strong>원~</div>
+                      <span class="price"><strong>5,000</strong>원</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide scroll_list">
+                    <a href="#none" aria-label="호텔바로보기">
+                      <img src="./images/img_hotel3.png" alt="" />
+                      <span class="location">제주시</span>
+                      <span class="place">호텔 난타</span>
+                      <div class="sale_price"><strong>71,081</strong>원~</div>
+                      <span class="price"><strong>88,000</strong>원</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab_content" id="tab_box01">
+            <div class="row_scroll_box">
+              <div class="swiper">
+                <!-- space-between="20" slides-per-view="auto" pagination="false" -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide scroll_list">
+                    <a href="#none" aria-label="렌트카바로보기">
+                      <img src="./images/img_car00.png" alt="" />
+                      <span class="location fc_orange">제주도렌터카</span>
+                      <span class="item">카니발</span>
+                      <div class="sale_price"><strong>110,000</strong>원~</div>
+                      <span class="price"><strong>231,000</strong>원</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide scroll_list">
+                    <a href="#none" aria-label="렌트카바로보기">
+                      <img src="./images/img_car01.png" alt="" />
+                      <span class="location fc_orange">제주도렌터카</span>
+                      <span class="item">레이</span>
+                      <div class="sale_price"><strong>25,104</strong>원~</div>
+                      <span class="price"><strong>16,7000</strong>원</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide scroll_list">
+                    <a href="#none" aria-label="렌트카바로보기">
+                      <img src="./images/img_car02.png" alt="" />
+                      <span class="location fc_orange">제주도렌터카</span>
+                      <span class="item">모닝</span>
+                      <div class="sale_price"><strong>40,250</strong>원~</div>
+                      <span class="price"><strong>50,000</strong>원</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide scroll_list">
+                    <a href="#none" aria-label="렌트카바로보기">
+                      <img src="./images/img_car03.png" alt="" />
+                      <span class="location fc_orange">제주도렌터카</span>
+                      <span class="item">아이오닉6</span>
+                      <div class="sale_price"><strong>71,081</strong>원~</div>
+                      <span class="price"><strong>88,000</strong>원</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide scroll_list">
+                    <a href="#none" aria-label="렌트카바로보기">
+                      <img src="./images/img_car03.png" alt="" />
+                      <span class="location fc_orange">제주도렌터카</span>
+                      <span class="item">카니발</span>
+                      <div class="sale_price"><strong>71,081</strong>원~</div>
+                      <span class="price"><strong>98,000</strong>원</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stc_banr_box">
+          <a class="stc_banr" href="#none" role="button" aria-label="제주패스 렌트카 최대 10% 특별할인"><img src="./images/img_banner_sales.png" alt="" /></a>
+        </div>
+        <div class="df_box">
+          <h3 class="h3_tit"><span class="fc_orange">더 설레게</span><br />추천 액티비티</h3>
+          <div class="fr">
+            <div class="more"><a href="#none" role="button" aria-label="추천액티비티 더보기">더보기</a></div>
+          </div>
+        </div>
+        <div class="row_scroll_box -card">
+          <div class="swiper">
+            <!--space-between="20" slides-per-view="auto" pagination="false"-->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide scroll_list">
+                <a href="#none" role="button" aria-label="추천액티비티바로가기">
+                  <div class="dim"><img src="./images/img_activity00.png" alt="" /></div>
+                  <div class="txt_grp">
+                    <span class="location bg_a_green">제주시</span>
+                    <span class="item">훈데르트바서파크<br />입장권</span>
+                    <span class="price"><strong>5,000</strong>원</span>
+                    <div class="sale_price"><strong>4,250</strong>원~</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide scroll_list">
+                <a href="#none" role="button" aria-label="추천액티비티바로가기">
+                  <div class="dim"><img src="./images/img_activity01.png" alt="" /></div>
+                  <div class="txt_grp">
+                    <span class="location bg_purple">서귀포시 서부</span>
+                    <span class="item">카멜리아힐</span>
+                    <span class="price"><strong>6,000</strong>원</span>
+                    <div class="sale_price"><strong>5,200</strong>원~</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide scroll_list">
+                <a href="#none" role="button" aria-label="추천액티비티바로가기">
+                  <div class="dim"><img src="./images/img_activity02.png" alt="" /></div>
+                  <div class="txt_grp">
+                    <span class="location bg_purple">서귀포시 서부</span>
+                    <span class="item">무민랜드제주</span>
+                    <span class="price"><strong>10,500</strong>원</span>
+                    <div class="sale_price"><strong>15,000</strong>원~</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide scroll_list">
+                <a href="#none" role="button" aria-label="추천액티비티바로가기">
+                  <div class="dim"><img src="./images/img_activity03.png" alt="" /></div>
+                  <div class="txt_grp">
+                    <span class="location bg_sky">서귀포시 동부</span>
+                    <span class="item">아쿠아플라넷제주<br />종합권</span>
+                    <span class="price"><strong>39,000</strong>원</span>
+                    <div class="sale_price"><strong>32,000</strong>원~</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layer_box -letter">
+          <div class="df_box">
+            <h3 class="h3_tit"><span class="fc_green">더 새롭게</span><br />탑승객을 위한 서비스</h3>
+          </div>
+          <p class="txt_box">고객의 여정이 더 새로울 수 있도록 <br />특별한 경험을 제공하기 위해 <br />에어로케이의 탑승객만 누릴 수 있는 <br />다양한 서비스와 프로덕트를 소개합니다</p>
+          <div class="row_scroll_box -pic">
+            <!-- space-between="20" slides-per-view="auto" pagination="false" -->
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide scroll_list">
+                  <div class="dim"><img src="./images/img_seat.png" alt="" /></div>
+                  <p class="info_txt">가볍고 <br />혁신적인 좌석</p>
+                </div>
+                <div class="swiper-slide scroll_list">
+                  <div class="dim"><img src="./images/img_service01.png" alt="" /></div>
+                  <p class="info_txt">코로나 19 <br />방역수칙</p>
+                </div>
+                <div class="swiper-slide scroll_list">
+                  <div class="dim"><img src="./images/img_service02.png" alt="" /></div>
+                  <p class="info_txt">젠더리스 <br />유니폼</p>
+                </div>
+                <div class="swiper-slide scroll_list">
+                  <div class="dim"><img src="./images/img_service03.png" alt="" /></div>
+                  <p class="info_txt">다양한 <br />기내 콘텐츠</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="df_box mt189">
+            <h3 class="h3_tit"><span class="fc_purple">나다운 여정의 시작</span><br />에어로케이와 함께</h3>
+          </div>
+          <div class="gallery_box mt20">
+            <ul class="pic_list">
+              <li class="pic">
+                <a href="#none" role="button" aria-label="sns게시물바로가기"><img src="./images/img_sns00.png" alt="" /></a>
+              </li>
+              <li class="pic">
+                <a href="#none" role="button" aria-label="sns게시물바로가기"><img src="./images/img_sns01.png" alt="" /></a>
+              </li>
+              <li class="pic">
+                <a href="#none" role="button" aria-label="sns게시물바로가기"><img src="./images/img_sns02.png" alt="" /></a>
+              </li>
+              <li class="pic">
+                <a href="#none" role="button" aria-label="sns게시물바로가기"><img src="./images/img_sns03.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="brand_box">
+          <div class="video_box">
+            <video src="https://framerusercontent.com/modules/assets/XDZDDuWikyNwCl9Ps1cB0Ju86Oc~UhKV1JH0Ht4x8zRLBCz5dVP_gHMKmPv9JsmKoV3EnT0.mp4" autoplay loop muted></video>
+          </div>
+          <div class="txt">
+            <p>끊임없는 도전과 <br />신뢰할 수 있는 전문성으로<br />더 넓은 세상을 향해 나아가겠습니다.</p>
+            <strong>당신의 더 넓은 세상을 책임질 우리는 에어로케이입니다.</strong>
+            <a href="#none" role="button" aria-label="aeroK 브랜드스토리 바로가기" class="btn_link">Aero K Brand Story</a>
+          </div>
+        </div>
+      </section>
+      <aside class="fixed_menu bottom_menu">
+        <ul>
+          <li class="menu_li">
+            <a href="#none" role="button" aria-label="예약조회"><img src="./images/icon_zoom-in.png" alt="" /><span>예약조회</span></a>
+          </li>
+          <li class="menu_li">
+            <a href="#none" role="button" aria-label="예매안내"><img src="./images/icon_fileText.png" alt="" /><span>예매안내</span></a>
+          </li>
+          <li class="menu_li">
+            <a href="#none" role="button" aria-label="이벤트"><img src="./images/icon_gift.png" alt="" /><span>이벤트</span></a>
+          </li>
+          <li class="menu_li">
+            <a href="#none" role="button" aria-label="고객센터"><img src="./images/icon_info.png" alt="" /><span>고객센터</span></a>
+          </li>
+        </ul>
+      </aside>
+      <footer class="footer_box">
+        <div class="social_box">
+          <div class="news_letter">
+            <input type="text" title="특가 및 소식을 확인하세요" placeholder="특가 및 소식을 확인하세요" />
+            <button class="btn_apply">구독신청</button>
+          </div>
+          <div class="sns_list">
+            <div class="sns"><a href="#none" role="button" aria-label="페이스북바로가기">페이스북</a></div>
+            <div class="sns"><a href="#none" role="button" aria-label="인스타그램바로가기">인스타그램</a></div>
+            <div class="sns"><a href="#none" role="button" aria-label="카카오챗바로가기">카카오</a></div>
+          </div>
+        </div>
+        <div class="info">
+          <a href="#none" class="logo" role="button" aria-label="areoK로고"></a>
+          <strong class="company">에어로케이항공(주)</strong>
+          <dl class="info_list">
+            <dt>대표이사</dt>
+            <dd>강병호</dd>
+            <i class="letter_slash"></i>
+            <dt>사업자등록번호</dt>
+            <dd><a href="#none" role="button" aria-label="사업자등록번호">274-88-00540</a></dd>
+            <dt>주소</dt>
+            <dd><address>충청북도 청주시 흥덕구 오송읍 오송생명3로 154</address></dd>
+            <dt>개인정보 보호 책임자</dt>
+            <dd>이병호</dd>
+          </dl>
+          <dl class="info_list">
+            <dt>고객센터</dt>
+            <dd>
+              <a href="#none" role="button" aria-label="고객센터전화하기"><strong>1899-2299</strong></a>
+            </dd>
+            <dd>영업시간 08:00 ~ 20:00</dd>
+          </dl>
+          <strong class="legal_num">통신판매업신고번호 2020-충북청주-0518</strong>
+          <div class="copyright">Ⓒ2023 Aero K Airlines Co. Ltd. ALL Right Reserved.</div>
+        </div>
+      </footer>
+      <div class="cd_popup head_count_popup open">
+        <div class="pop_container">
+          <header class="pop_header">
+            <h4 class="h4_tit">인원 선택</h4>
+            <button class="ico_closed pop_close" aria-label="닫기"></button>
+          </header>
+          <div class="pop_content">
+            <div class="inner">
+              <div class="spinner_box">
+                <div class="spinner_obj">
+                  <div class="tit">
+                    <strong>성인</strong>
+                    <span>만 13세 이상</span>
+                  </div>
+                  <div class="spinner">
+                    <button class="ico_minus" aria-label="인원삭제"></button>
+                    <input type="text" class="num" value="0" title="인원" />
+                    <button class="ico_plus able" aria-label="인원추가"></button>
+                  </div>
+                </div>
+                <div class="spinner_obj">
+                  <div class="tit">
+                    <strong>소아</strong>
+                    <span>2세부터 만 13세 미만</span>
+                  </div>
+                  <div class="spinner" data-min="1" data-max="5">
+                    <button class="ico_minus" aria-label="인원삭제"></button>
+                    <input type="text" class="num" value="0" title="인원" />
+                    <button class="ico_plus able" aria-label="인원추가"></button>
+                  </div>
+                </div>
+                <div class="spinner_obj">
+                  <div class="tit">
+                    <strong>유아</strong>
+                    <span>0세부터 만 2세 미만</span>
+                  </div>
+                  <div class="spinner">
+                    <button class="ico_minus" aria-label="인원삭제"></button>
+                    <input type="text" class="num" value="0" title="인원" />
+                    <button class="ico_plus able" aria-label="인원추가"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="bg_box">
+                <div class="age_calc">
+                  <div>나이계산기</div>
+                  <p>생년월일을 입력해주세요.</p>
+                  <input type="text" class="date" title="생년월일입력" placeholder="1999-11-04" required maxlength="10" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" />
+                  <a href="#none" role="button" aria-label="계산하기" class="btn_c">계산하기</a>
+                  <ul class="info_list">
+                    <li>국내선의 경우, 소아/유아의 나이 구분은 각 항공편의 탑승일 기준입니다.</li>
+                    <li>탑승 수속 시 생년월일 확인 가능한 서류 지참이 필수입니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pop_btn_box">
+            <div class="total">
+              <span class="subtit">인원</span>
+              <div class="result_grp">
+                <div class="result">
+                  <span class="obj">성인</span>
+                  <span class="num">1</span>
+                  <span>명</span>
+                </div>
+              </div>
+            </div>
+            <div class="btn_flex">
+              <button class="btn_g pop_close">이전단계</button>
+              <button class="btn_c">선택완료</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cd_popup popup2">
+        <div class="pop_container">
+          <header class="pop_header">
+            <h4 class="h4_tit">팝업제목</h4>
+            <button class="ico_closed pop_close"></button>
+          </header>
+          <div class="pop_content">
+            <div class="inner">
+              <h2>팝업입니다.</h2>
+              <h2>팝업입니다.</h2>
+              <h2>팝업입니다.</h2>
+              <h2>팝업입니다.</h2>
+              <h2>팝업입니다.</h2>
+              <h2>팝업입니다.</h2>
+              <h2>팝업입니다.</h2>
+              <h2>팝업입니다.</h2>
+              <h2>팝업입니다.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      function tabMove() {
+        const $tab_li = $('.tab_list_box .tab_li a');
+
+        $('.tab_content').eq(1).hide();
+        $('.underline').css({
+          width: $tab_li.eq(0).width(),
+          left: $tab_li.eq(0).position().left + 1 + 'px'
+        });
+
+        $tab_li.click(function () {
+          const $this = $(this);
+          const $posX = $this.position().left;
+          const $liWidth = $this.width();
+
+          $('.tab_content').fadeOut(200);
+          $(this.hash).delay(100).fadeIn(100);
+
+          $('.underline').css({
+            width: $liWidth,
+            left: $posX + 1 + 'px'
+          });
+        });
+      }
+
+      function bottomMenu() {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('.fixed_menu').addClass('on');
+          } else {
+            $('.fixed_menu').removeClass('on');
+          }
+        });
+      }
+      let mainSwiper;
+      let subSwiper;
+      function swiperInit() {
+        mainSwiper = new Swiper('.slide_box .swiper', {
+          // Optional parameters
+          loop: true,
+          autoplay: true,
+          pagination: {
+            el: '.slide_box .swiper-pagination',
+            type: 'fraction'
+          },
+          scrollbar: {
+            el: '.slide_box .swiper-scrollbar'
+          }
+        });
+
+        $('.slide_box .swiper-auto-btn').click(function (e) {
+          e.preventDefault();
+          const $this = $(this);
+          if ($this.hasClass('_stop')) {
+            mainSwiper.autoplay.start();
+            $this.removeClass('_stop');
+            $this.text('정지');
+          } else {
+            mainSwiper.autoplay.stop();
+            $this.addClass('_stop');
+            $this.text('재생');
+          }
+        });
+
+        //space-between="20" slides-per-view="auto" pagination="false"
+        subSwiper = new Swiper('.row_scroll_box .swiper', {
+          slidesPerView: 'auto',
+          spaceBetween: 20
+        });
+      }
+
+      function spinner() {
+        const $spinner = $('.spinner_box .spinner_obj .spinner');
+        const $min = 0;
+        const $max = 10;
+
+        function setValue(target, value) {
+          if (value === '') return;
+          const $target = target;
+          const $val = value;
+          const $wrap = $target.closest('.spinner');
+          const $spMin = $wrap.data('min') ? parseInt($wrap.data('min')) : $min;
+          const $spMax = $wrap.data('max') ? parseInt($wrap.data('max')) : $max;
+          const $input = $wrap.find('input');
+          $wrap.find('button').addClass('able');
+          if ($val >= $spMax) {
+            $input.val($spMax);
+            $wrap.find('.ico_plus').removeClass('able');
+          } else if ($val <= $spMin) {
+            $input.val($spMin);
+            $wrap.find('.ico_minus').removeClass('able');
+          } else {
+            $input.val($val);
+          }
+        }
+
+        $spinner.find('button').click(function (e) {
+          e.preventDefault();
+          const $this = $(this);
+          const $input = $this.siblings('input');
+          let $inpVal = parseInt($input.val());
+          if (!$this.hasClass('able')) return;
+          if ($this.hasClass('ico_plus')) {
+            //plus
+            $inpVal += 1;
+          } else if ($this.hasClass('ico_minus')) {
+            //minus
+            $inpVal -= 1;
+          }
+          setValue($this, $inpVal);
+        });
+
+        function setInput(target) {
+          const $this = $(target);
+          const $val = $this.val() == '' ? $this.val() : parseInt($this.val());
+          setValue($this, $val);
+        }
+        $spinner.find('input').on('input', function () {
+          setInput(this);
+        });
+        $spinner.find('input').each(function () {
+          setInput(this);
+        });
+      }
+
+      function popOpen(target) {
+        $(target).addClass('open');
+        $(target).closest('.wrap').css({
+          position: 'fixed',
+          width: '100%',
+          height: '100%',
+          overflow: 'hidden'
+        });
+      }
+      function popClose(target) {
+        $(target).removeClass('open');
+        $(target).closest('.wrap').css({
+          position: 'relative',
+          overflow: 'auto'
+        });
+      }
+
+      function popUp() {
+        $('.sch_box .btn_sch a').click(function () {
+          popOpen('.head_count_popup');
+        });
+
+        $('.cd_popup .pop_close').click(function (e) {
+          e.preventDefault();
+          const $popup = $(this).closest('.cd_popup');
+          popClose($popup);
+        });
+
+        if (popOpen == true) {
+        }
+      }
+      tabMove();
+      bottomMenu();
+      swiperInit();
+      popUp();
+      spinner();
+    </script>
+  </body>
+</html>
